@@ -168,9 +168,9 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["HEJ","HELLO","HOLA","HALLO", "MOI", "Olá" ,"Bonjour" ,"Ciao","WHAT's UP?" , "NOT MUCH!","COOL" ,"I hope you have a nice day"],
-            typeSpeed: 50,
-            backDelay: 500,
+            strings: ["HEJ","HELLO","HOLA","" ,"WHAT's UP?" ,"","", "NOT MUCH!","","COOL" ,"", "have a nice day!"],
+            typeSpeed: 100,
+            backDelay: 1000,
             loop: false,
             contentType: 'html', // or text
             // defaults to false for infinite loop
