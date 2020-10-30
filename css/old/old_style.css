@@ -1,12 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Syne+Mono&display=swap);
+
 
 body{
   font-family: 'Inter', sans-serif;
   font-size:14px;
-  font-weight: 400;
+  font-weight: 700;
   overflow-y:scroll;
   -webkit-font-smoothing: antialiased;
-  background-color:black;
 }
 
 ::selection {
@@ -23,18 +24,9 @@ body{
 
 p{
   font-family: 'Inter', sans-serif;
-  font-size:14px;
-  font-weight: 400;
-}
+  font-size:10px;
+  font-weight: 200;
 
-
-p1{
-  font-family: 'Inter', sans-serif;
-  font-size:14px;
-  font-weight: 400;
-  float: left;
-  text-align:center;
-  color:#8d8d8d;
 }
 
 a{
@@ -82,8 +74,8 @@ PRELOADER
 }
 
 .spinner {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 0px auto;
   background-color: #333;
   border-radius: 100%;
@@ -94,7 +86,7 @@ PRELOADER
 @-webkit-keyframes scaleout {
   0% { -webkit-transform: scale(0.0) }
   100% {
-    -webkit-transform: scale(1.0);
+    -webkit-transform: scale(200.0);
     opacity: 0;
   }
 }
@@ -104,7 +96,7 @@ PRELOADER
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
   } 100% {
-    transform: scale(1.0);
+    transform: scale(200.0);
     -webkit-transform: scale(1.0);
     opacity: 0;
   }
@@ -244,7 +236,7 @@ ul.social-icon a:hover{
 }
 
 .menu-index i:hover{
-  color:#c3c3c3;
+  color:#0000ff;
 }
 
 
@@ -269,7 +261,7 @@ ul.menu-icon a:hover{
 }
 
 header a{
-  color:white;
+  color:#11111;
 }
 
 ul.header-nav{
@@ -279,15 +271,16 @@ ul.header-nav{
 
 header .logo > a{
   font-size:23px;
-  font-weight:800;
+  font-weight:100;
   float:left;
   line-height:80px;
   padding-right:40px;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #0000;
+
 }
 
 header .logo > a:hover{
-  color:#6565656;
+  color:#11111;
 }
 
 header li{
@@ -334,7 +327,7 @@ header li:hover ul{
 **************************
 CONTENT
 **************************
-
+*/
 
 .hero-image{
   position:relative;
@@ -348,7 +341,7 @@ CONTENT
   background-size: cover;
 
 }
-*/
+
 .one-column{
   width:40%;
   position:relative;
@@ -387,10 +380,10 @@ CONTENT
 }
 
 .content .text-intro h1{
-  font-size:60px;
+  font-size:43px;
   width:40%;
   text-transform:uppercase;
-  color:white;
+  color:#000000;
   font-weight:900;
   line-height:70px;
 }
@@ -403,15 +396,6 @@ CONTENT
   line-height:22px;
   letter-spacing:1px;
   width:40%;
-}
-.content .text-intro p1{
-    font-size:11px;
-    color:#8d8d8d;
-    margin-top:30px;
-    font-weight:200;
-    line-height:22px;
-    letter-spacing:1px;
-    width:40%;
 }
 
         .typed-cursor{
@@ -453,7 +437,7 @@ CONTENT
 **************************
 HOME SIDEBAR
 **************************
-
+*/
 
 .home-sidebar{
   top:0;
@@ -474,7 +458,7 @@ HOME SIDEBAR
 .parallax-option{
   position:absolute; width:100%; height:100%;
 }
-*/
+
 /*
 **************************
 PORTFOLIO GRID
@@ -483,22 +467,19 @@ PORTFOLIO GRID
 
 .prev-next{
   width:100%;
-
   max-width:1170px;
   margin:0 auto;
   padding-top:100px;
-  color:#808080;
 }
 
 .prev-next a{
-  color:#808080;
+  color:black;
   font-weight:500;
   padding-bottom: 15px;
 }
 
 .prev-next a:hover{
-  border-bottom:1px;
-  color:black;
+  border-bottom:1px solid black;
 }
 
 .prev-button{
@@ -506,7 +487,6 @@ PORTFOLIO GRID
   position:relative;
   float:left;
   text-align:left;
-  color:#808080;
 }
 
 .next-button{
@@ -514,7 +494,6 @@ PORTFOLIO GRID
   position:relative;
   float:left;
   text-align:right;
-  color:#808080;
 }
 
 
@@ -537,15 +516,16 @@ li.grid-item{
   width:360px;
   position:relative;
   float:left;
-  padding:4px;
+  padding:15px;
 }
+
 
 .grid-hover{
   position: absolute;
   width:360px;
   height: 100%;
   top:0;
-  /*background: black;*/
+  background: black;
   z-index: 2;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
@@ -556,29 +536,29 @@ li.grid-item{
 }
 
 .grid-hover:hover{
-  opacity: 0.9;
+  opacity: 0.1;
 }
 
 .grid-hover h1{
-  font-size:18px;
+  font-size:23px;
   bottom:80px;
   left:40px;
   position:absolute;
   text-transform:uppercase;
-  color:white;
+  color:#000000;
   letter-spacing:1px;
-  font-weight:600;
+  font-weight:900;
   line-height:50px;
 }
 
 .grid-hover p{
-  font-size:12px;
-  bottom:60px;
+  font-size:13px;
+  bottom:40px;
   left:40px;
   position:absolute;
-  color:white;
+  color:#686868;
   letter-spacing:1px;
-  font-weight:100;
+  font-weight:400;
   line-height:50px;
 }
 
@@ -595,7 +575,7 @@ FOOTER
 #footer-box{height:150px; margin-top:75px;}
 
 footer{
-  background-color:black;
+  background: #f1f1f1;
   width:100%;
   margin-top:150px;
   height:300px;
@@ -622,7 +602,7 @@ footer{
 }
 
 .footer-margin .social-footer{
-  color: #ffffff;
+  color: #686868;
   letter-spacing: 1px;
   font-size: 13px;
   width: 100%;
@@ -639,7 +619,6 @@ footer{
 .footer-margin .social-footer a:hover{
   color:#c3c3c3;
 }
-
 
 
 /*
@@ -691,7 +670,7 @@ input.button-submit{
   font-weight:500;
   border:0;
   font-family: 'Inter', sans-serif;
-  color:white;
+  color:#000000;
   float:right;
   font-weight:900;
   line-height:40px;
