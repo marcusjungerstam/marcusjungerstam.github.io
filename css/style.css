@@ -349,13 +349,13 @@ CONTENT
 }
 */
 .one-column{
-  width:40%;
+  width:20%;
   position:relative;
   float:left;
 }
 
 .two-column{
-  width:60%;
+  width:40%;
   position:relative;
   float:left;
 }
