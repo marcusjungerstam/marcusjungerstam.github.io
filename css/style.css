@@ -1,9 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
+/*@import url("http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200");*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Raleway:wght@300;400;500;600;800&display=swap");
+
+
 
 body{
-  font-family: 'Inter', sans-serif;
-  font-size:14px;
-  font-weight: 400;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
   overflow-y:scroll;
   -webkit-font-smoothing: antialiased;
   background-color:black;
@@ -22,16 +25,16 @@ body{
 	}
 
 p{
-  font-family: 'Inter', sans-serif;
+  font-family:'Raleway', sans-serif;
   font-size:14px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 
 p1{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size:14px;
-  font-weight: 400;
+  font-weight: 600;
   float: left;
   text-align:center;
   color:#8d8d8d;
@@ -217,7 +220,7 @@ ul.social-icon a{
   float:right;
   font-size:15px;
   border-bottom:0;
-  color:black;
+  color:white;
   padding-right:0px !important;
 }
 
@@ -277,12 +280,14 @@ ul.header-nav{
 }
 
 header .logo > a{
-  font-size:23px;
-  font-weight:800;
+  font-size:20px;
+  font-weight:200;
   float:left;
-  line-height:80px;
-  padding-right:40px;
-  border-bottom: 1px solid #f1f1f1;
+  line-height:115px;
+  padding-right:0%;
+  border-bottom: 0px solid black;
+
+
 }
 
 header .logo > a:hover{
@@ -386,8 +391,8 @@ CONTENT
 }
 
 .content .text-intro h1{
-  font-size:60px;
-  width:40%;
+  font-size:40px;
+  width:600%;
   text-transform:uppercase;
   color:white;
   font-weight:900;
