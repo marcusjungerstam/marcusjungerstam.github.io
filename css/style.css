@@ -131,7 +131,7 @@ NAVIGATION OPACITY
   width:100%;
   height:100%;
   top:0;
-  z-index:1000;
+  z-index:2000;
   background:rgba(0,0,0,0.95);
 }
 
@@ -165,7 +165,7 @@ ul.menu-fullscreen li > a:hover{
   position: relative;
   top:0;
   margin:0 auto;
-  z-index: 900;
+  z-index: 1000;
 }
 
 
@@ -176,7 +176,7 @@ ul.menu-fullscreen li > a:hover{
   width:100%;
   margin:0 auto;
   height:80px;
-  z-index: 800;
+  z-index: 1000;
 }
 
 /*
