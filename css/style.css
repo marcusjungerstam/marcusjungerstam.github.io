@@ -71,7 +71,7 @@ PRELOADER
   width:100%;
   height:100%;
   background:black;
-  z-index:999999;
+  z-index:99999;
 }
 
 .preloader .item{
@@ -176,7 +176,7 @@ ul.menu-fullscreen li > a:hover{
   width:100%;
   margin:0 auto;
   height:80px;
-  z-index: 900;
+  z-index: 800;
 }
 
 /*
@@ -230,7 +230,7 @@ ul.social-icon a:hover{
   position: fixed;
   right: 5%;
   top: 30px;
-  z-index: 2000;
+  z-index: 2100;
   padding:20px;
 cursor:pointer;
 }
@@ -317,7 +317,7 @@ header li > a #active{
 }
 
 header li ul{
-  overflow: hidden; display: none; background: #f9f9f9; z-index:2100;
+  overflow: hidden; display: none; background: #f9f9f9; z-index:2000;
 }
 
 header li ul li a{
