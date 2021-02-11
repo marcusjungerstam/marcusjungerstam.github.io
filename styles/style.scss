@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: P-BIG;
+  src: url("/fonts/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: P-MED;
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: P-LIGHT;
+  src: url("/fonts/Poppins-Thin.ttf");
+}
+
+body {
+  font-family: P-MED;
+  color: white;
+}
+
+.portfolio_page {
+  background: black;
+}
+
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.logo {
+  filter: invert(1);
+}
+
+.page {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 2fr 1fr 5%;
+}
+
+.hero {
+  overflow: hidden;
+  height: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.details {
+  grid-column: 2/3;
+}
+
+.bio_page {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 2fr 1fr 5%;
+}
+
+.bio_details {
+  grid-column: 3/3;
+}
+
+.bio_pic {
+  opacity: 100%;
+  width: 100%;
+  grid-column: 3/3;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 7%;
+  width: 100%;
+  background-color: rgb(7, 7, 7);
+}
+
+.social-links {
+  margin: 30px auto;
+  text-align: center;
+  letter-spacing: 20px;
+  filter: invert(1);
+}
+
+.nav-links {
+  position: absolute;
+  right: 0px;
+  height: 92vh;
+  top: 8vh;
+  background-color: rgb(20, 20, 22);
+  opacity: 95%;
+  width: 100%;
+  display: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-active {
+  display: block;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.burger:hover {
+  filter: opacity(0.6);
+}
