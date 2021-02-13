@@ -102,6 +102,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .bio_page {
@@ -147,24 +148,17 @@ nav {
 .nav-links {
   position: absolute;
   right: 0px;
-  height: 92vh;
-  top: 20vh;
+  height: 100vh;
+  top: 10vh;
+  width: 100%;
   background-color: black;
   opacity: 100%;
-  -webkit-filter: blur(50%);
-          filter: blur(50%);
-  width: 100%;
-  display: none;
   z-index: 1000;
+  display: none;
 }
 
 .nav-links li {
   list-style: none;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,10 +169,19 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20%;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 150%;
 }
 
 .nav-active {
   display: block;
+  background-color: #313131;
 }
 
 .work_page {
