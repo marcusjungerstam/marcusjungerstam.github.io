@@ -86,40 +86,36 @@ nav {
 .bio_page {
   overflow: hidden;
   min-height: 90vh;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0fr 1fr;
 }
 
 .bio_details {
-  margin-right: 5%;
-  margin-left: 5%;
   text-align: left;
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
 .bio_pic {
-  margin-right: 5%;
-  margin-left: 5%;
   margin-top: 5%;
   opacity: 100%;
   grid-column: 2/3;
   grid-row: 1/2;
-  width: 50%;
 }
 
 .bio_page .image {
-  transform: scale(95%);
-  filter: blur(3px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 100%;
 }
 
 .bio_page .image:hover {
   transform: scale(100%);
-  filter: blur(0px);
+  filter: saturate(0%) blur(0px);
 }
 
 .footer {

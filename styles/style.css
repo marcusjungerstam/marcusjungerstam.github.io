@@ -107,20 +107,15 @@ nav {
 .bio_page {
   overflow: hidden;
   min-height: 90vh;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-rows: 0fr 1fr;
+      grid-template-rows: 0fr 1fr;
 }
 
 .bio_details {
-  margin-right: 5%;
-  margin-left: 5%;
   text-align: left;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -131,8 +126,6 @@ nav {
 }
 
 .bio_pic {
-  margin-right: 5%;
-  margin-left: 5%;
   margin-top: 5%;
   opacity: 100%;
   -ms-grid-column: 2;
@@ -141,21 +134,22 @@ nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  width: 50%;
 }
 
 .bio_page .image {
-  -webkit-transform: scale(95%);
-          transform: scale(95%);
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 100%;
 }
 
 .bio_page .image:hover {
   -webkit-transform: scale(100%);
           transform: scale(100%);
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+  -webkit-filter: saturate(0%) blur(0px);
+          filter: saturate(0%) blur(0px);
 }
 
 .footer {
