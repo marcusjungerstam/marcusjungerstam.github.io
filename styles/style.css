@@ -67,31 +67,30 @@ nav {
   margin-top: 5%;
   margin-right: 5%;
   margin-left: 5%;
-  -ms-grid-columns: 5% (1fr)[3] 5%;
-      grid-template-columns: 5% repeat(3, 1fr) 5%;
-  -ms-grid-rows: 10% 1fr 16fr 1fr 10%;
-      grid-template-rows: 10% 1fr 16fr 1fr 10%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 10% 1fr 1fr;
+      grid-template-rows: 10% 1fr 1fr;
 }
 
 .page .hero {
   text-align: left;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .page .details {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 1/2;
   color: white;
-  margin-top: auto;
   text-align: left;
   z-index: 100;
 }
@@ -106,29 +105,57 @@ nav {
 }
 
 .bio_page {
+  overflow: hidden;
   min-height: 90vh;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5% 1fr 2fr 1fr 5%;
-      grid-template-columns: 5% 1fr 2fr 1fr 5%;
-  -ms-grid-rows: 2fr 1fr 1fr;
-      grid-template-rows: 2fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .bio_details {
-  -ms-grid-column: 3;
-  grid-column: 3/3;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: left;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
 .bio_pic {
-  margin-top: 10vh;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
   opacity: 100%;
-  width: 100%;
-  -ms-grid-column: 3;
-  grid-column: 3/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  width: 50%;
+}
+
+.bio_page .image {
+  -webkit-transform: scale(95%);
+          transform: scale(95%);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.bio_page .image:hover {
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
 }
 
 .footer {
