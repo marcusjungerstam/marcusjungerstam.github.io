@@ -137,11 +137,14 @@ nav {
 .nav-links {
   position: absolute;
   right: 0px;
-  height: 100vh;
+  height: 100%;
   top: 10vh;
   width: 100%;
-  background-color: rgb(0, 0, 0);
-  opacity: 100%;
+  background-image: linear-gradient(
+    rgba(31, 31, 31, 100),
+    rgba(15, 15, 15, 100)
+  );
+
   z-index: 1000;
   display: none;
 }
@@ -151,14 +154,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20%;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 120%;
+  margin: 10px;
 }
 
 .nav-active {
