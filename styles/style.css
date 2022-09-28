@@ -29,7 +29,7 @@ body {
 }
 
 nav {
-  min-height: 10vh;
+  min-height: 6vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +41,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 0px;
-  background-color: #1f1f1f;
+  background-color: black;
 }
 
 .logo {
@@ -102,6 +102,27 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-top: 0%;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .bio_page {
@@ -173,10 +194,8 @@ nav {
   position: absolute;
   right: 0px;
   height: 100%;
-  top: 10vh;
+  top: 6vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1f1f1f), to(#0f0f0f));
-  background-image: linear-gradient(#1f1f1f, #0f0f0f);
   z-index: 1000;
   display: none;
 }
@@ -205,7 +224,7 @@ nav {
 
 .nav-active {
   display: block;
-  background-color: #313131;
+  background-color: black;
 }
 
 .work_page {

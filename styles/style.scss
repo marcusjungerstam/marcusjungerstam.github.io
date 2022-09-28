@@ -28,13 +28,14 @@ body {
 }
 
 nav {
-  min-height: 10vh;
+  min-height: 6vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  background-color: rgb(31, 31, 31);
+  background-color: black;
+  
 }
 
 .logo {
@@ -43,6 +44,7 @@ nav {
 }
 
 .burger {
+  
   margin-right: 5%;
   cursor: pointer;
 }
@@ -59,6 +61,7 @@ nav {
   margin-left: 5%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10% 1fr 1fr;
+  
 }
 
 .page .hero {
@@ -82,6 +85,20 @@ nav {
   align-items: center;
   cursor: pointer;
 }
+
+
+.video-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 0%;
+}
+.video{
+  display: flex;
+  width: 100%;
+}
+
 
 .bio_page {
   overflow: hidden;
@@ -138,13 +155,8 @@ nav {
   position: absolute;
   right: 0px;
   height: 100%;
-  top: 10vh;
+  top: 6vh;
   width: 100%;
-  background-image: linear-gradient(
-    rgba(31, 31, 31, 100),
-    rgba(15, 15, 15, 100)
-  );
-
   z-index: 1000;
   display: none;
 }
@@ -166,7 +178,7 @@ nav {
 
 .nav-active {
   display: block;
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(0, 0, 0);
 }
 
 .work_page {
