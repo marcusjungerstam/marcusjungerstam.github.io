@@ -40,14 +40,19 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0px;
+  padding: 10px 0px;
   background-color: black;
 }
 
 .logo {
+  margin-left: 5%;
   -webkit-filter: invert(1);
           filter: invert(1);
-  margin-left: 5%;
+}
+
+.burgercolor {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .burger {
@@ -92,7 +97,7 @@ nav {
   grid-row: 1/2;
   color: white;
   text-align: left;
-  z-index: 100;
+  z-index: 0;
 }
 
 .page .hero .image {
