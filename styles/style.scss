@@ -1,10 +1,11 @@
-*,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 @font-face {
   font-family: P-BIG;
@@ -22,12 +23,13 @@
 }
 
 
- 
 
 body {
   font-family: P-MED;
   color: white;
   background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -203,7 +205,7 @@ a:active {
   position: absolute;
   right: 0px;
   height: 100%;
-  top: 6vh;
+  top: 6%;
   width: 100%;
   z-index: 1000;
   display: none;
@@ -214,6 +216,7 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .nav-links a {
@@ -222,12 +225,29 @@ a:active {
   font-weight: bold;
   font-size: 120%;
   margin: 10px;
+  animation-duration: 0.5s;
 }
+
 
 .nav-active {
   display: block;
   background-color: rgb(0, 0, 0);
 }
+
+
+.nav-links .link1{
+  margin-top: 10%;
+  animation-delay: 0.1s;
+}
+.nav-links .link2{
+  margin-top: 2%;
+  animation-delay: 0.2s;
+}
+.nav-links .link3{
+  margin-top: 2%;
+  animation-delay: 0.3s;
+}
+
 
 .work_page {
   display: grid;
