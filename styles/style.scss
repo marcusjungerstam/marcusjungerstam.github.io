@@ -33,20 +33,20 @@ body {
 }
 
 nav {
-  min-height: 6vh;
+  height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
-  background-color: black;
-  
+  margin-bottom: 0px;
+  background: linear-gradient(to bottom, #080808 0%, #000000 100%);
   
 }
 
 .logo {
   margin-left: 5%;
   filter: invert(1);
+  z-index: 0;
 }
 
 .burgercolor {
@@ -57,7 +57,10 @@ nav {
 
 .burger {
   margin-right: 5%;
+  margin-top: 1%;
+  scale: 100%;
   cursor: pointer;
+  z-index: 0;
   
 }
 
@@ -95,7 +98,6 @@ nav {
 .page .hero .image {
   max-width: 100%;
   width: 100%;
-
   align-items: center;
   cursor: pointer;
 }
@@ -110,8 +112,7 @@ nav {
 }
 .video{
   display: flex;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 
@@ -138,7 +139,7 @@ a:active {
   min-height: 90vh;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 0fr 1fr;
+  grid-template-rows: auto 1fr auto;;
 }
 
 .bio_details {
@@ -162,11 +163,11 @@ a:active {
   margin-bottom: auto;
   max-width: 100%;
 }
-
+/*
 .bio_page .image:hover {
   transform: scale(100%);
-  filter: saturate(0%) blur(0px);
-}
+  filter: saturate(100%) blur(10px);
+}*/
 
 .footer {
   position: fixed;
@@ -174,7 +175,8 @@ a:active {
   bottom: 0;
   height: 10vh;
   width: 100%;
-  background-color: rgb(15, 15, 15);
+  background: linear-gradient(to bottom, #101010 0%, #151515 100%);;
+  z-index: 100;
 }
 
 .footer_work_page{
@@ -205,9 +207,9 @@ a:active {
   position: absolute;
   right: 0px;
   height: 100%;
-  top: 6%;
+  top: 70px;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   display: none;
 }
 
@@ -224,7 +226,7 @@ a:active {
   text-decoration: none;
   font-weight: bold;
   font-size: 120%;
-  margin: 10px;
+  margin: 0px;
   animation-duration: 0.5s;
 }
 
@@ -247,16 +249,26 @@ a:active {
   margin-top: 2%;
   animation-delay: 0.3s;
 }
+.nav-links .link4{
+  margin-top: 2%;
+  animation-delay: 0.4s;
+  
+}
 
 
 .work_page {
-  display: grid;
+  
   min-height: 90vh;
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 5px;
+  
+
+  /*
+  display: grid;
   grid-template-columns: 0% repeat(1, 1fr) 0%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto; 
+  */
 }
 
 .work_page .project_name {
@@ -266,13 +278,14 @@ a:active {
 .work_page .image {
   max-width: 100%;
   width: 100%;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   max-height: 100%;
-  opacity: 50%;
+  opacity: 100%;
 }
 
 .work_page .image:hover {
-  opacity: 100%;
+  opacity: 75%;
+  
 }
 .project {
   grid-column: 1/3;
@@ -331,4 +344,5 @@ a:active {
   margin-top: 0%;
   display: flex;
   width: 100%;
+
 }
