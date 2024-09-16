@@ -48,8 +48,7 @@ nav {
 
 .logo {
   margin-left: 5%;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  margin-top: 10px;
   z-index: 0;
 }
 

@@ -1,42 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-<style type="text/css">
-	.st0{display:none;}
-	.st1{display:inline;}
-	.st2{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
-</style>
-<g id="Layer_2" class="st0">
-	<rect x="-1.8" y="-2.7" class="st1" width="69.5" height="70.3"/>
-</g>
-<g id="Layer_1">
-	<g>
-		
-			<image style="overflow:visible;" width="522" height="495" xlink:href="1358D4EC.png"  transform="matrix(0.24 0 0 0.24 -31.44 -29.52)">
-		</image>
-	</g>
-	<g>
-		
-			<image style="overflow:visible;" width="522" height="496" xlink:href="1358D4EF.png"  transform="matrix(0.24 0 0 0.24 -31.44 -29.6)">
-		</image>
-	</g>
-	<polygon class="st2" points="60,13.1 60,59.4 51.8,59.4 51.8,24.4 33.5,42.8 15.3,24.6 15.3,59.4 7.1,59.4 7.1,12.8 15.2,12.8 
-		15.3,12.9 33.5,31.1 52.3,12.9 	"/>
-	<polygon class="st3" points="57.7,6.9 57.7,53.2 49.4,53.2 49.4,18.3 31.2,36.6 13,18.4 13,53.2 4.8,53.2 4.8,6.6 12.9,6.6 13,6.7 
-		31.2,24.9 50,6.7 	"/>
-	<line class="st2" x1="4.8" y1="6.6" x2="7.1" y2="12.8"/>
-	<line class="st2" x1="13" y1="18.4" x2="15.3" y2="24.6"/>
-	<line class="st2" x1="13" y1="53.2" x2="15.3" y2="59.4"/>
-	<line class="st2" x1="4.7" y1="53.2" x2="7.1" y2="59.4"/>
-	<line class="st2" x1="31.2" y1="36.6" x2="33.5" y2="42.8"/>
-	<line class="st2" x1="31.2" y1="24.9" x2="33.5" y2="31.1"/>
-	<line class="st2" x1="50" y1="6.7" x2="52.7" y2="12.8"/>
-	<line class="st2" x1="57.8" y1="6.9" x2="60" y2="13.1"/>
-	<line class="st2" x1="12.9" y1="6.6" x2="15.3" y2="12.9"/>
-	<line class="st2" x1="49.5" y1="18.1" x2="51.8" y2="24.4"/>
-	<line class="st2" x1="49.4" y1="53.2" x2="51.8" y2="59.4"/>
-	<line class="st2" x1="57.7" y1="53.2" x2="60" y2="59.4"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        display: none;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="Layer_2" class="cls-2">
+        <rect x="-1.8" y="-2.7" width="69.5" height="70.3"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M42.3,27.3c1.8,2.6,4.8,4.3,8.2,4.2,5.3-.1,9.5-4.4,9.5-9.7,0-5.4-4.3-9.8-9.7-9.8s-6.3,1.7-8,4.2c-.5.7-1.6.7-2.1,0-1.8-2.6-4.7-4.2-8-4.2s-6.3,1.7-8.1,4.3c-.5.8-1.6.8-2.2,0-1.7-2.6-4.7-4.3-8.1-4.3-5.4,0-9.8,4.4-9.7,9.8,0,5.3,4.3,9.6,9.6,9.7,3.4,0,6.5-1.7,8.2-4.3.5-.8,1.6-.8,2.2,0,1.7,2.6,4.7,4.3,8.1,4.3s6.3-1.7,8-4.2c.5-.8,1.6-.7,2.1,0Z"/>
+        <path class="cls-1" d="M13.6,32.6c-5.4,0-9.7,4.3-9.7,9.7s4.3,9.7,9.7,9.7,9.7-4.3,9.7-9.7-4.3-9.7-9.7-9.7Z"/>
+        <circle class="cls-1" cx="50.4" cy="42.3" r="9.7"/>
+      </g>
+    </g>
+  </g>
 </svg>
