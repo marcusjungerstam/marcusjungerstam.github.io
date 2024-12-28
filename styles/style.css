@@ -56,9 +56,21 @@ nav {
   filter: opacity(0.6);
 }
 
-.slide {
+.slide_index {
   display: block;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+.slide_projects {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
