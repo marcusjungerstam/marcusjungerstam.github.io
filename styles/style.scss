@@ -61,11 +61,28 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height:fit-content;
-  width: fit-content;
   object-fit: cover;
   max-width: 100%;
 } 
+@media screen and (max-width: 600px){
+  .slide_index{
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+   
+    
+    
+    
+    
+    
+    
+
+    
+  } 
+
+} 
+  
+
 
 .slide_projects {
   display: block;
@@ -165,11 +182,7 @@ a:active {
   max-width: 100%;
 }
 
-/*
-.bio_page .image:hover {
-  transform: scale(100%);
-  filter: saturate(100%) blur(10px);
-}*/
+
 .footer {
   position: fixed;
   left: 0;
@@ -268,11 +281,7 @@ a:active {
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 5px;
-  /*
-  display: grid;
-  grid-template-columns: 0% repeat(1, 1fr) 0%;
-  grid-template-rows: auto 1fr auto; 
-  */
+ 
 }
 
 .work_page .project_name {
@@ -354,17 +363,4 @@ a:active {
   width: 100%;
 }
 
-/*
 
-.item4 {
-  grid-column: 4/span 6;
-  width: 100%;
-   
-}
-
-.item4-slideshow {
-  grid-column: 1/span 3;
-  display: block;
-  width: 100%; 
-}
-*/
