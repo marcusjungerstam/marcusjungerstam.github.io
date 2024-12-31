@@ -33,6 +33,7 @@ nav {
   align-items: center;
   margin-bottom: 0px;
   background: linear-gradient(to bottom, #080808 0%, #000000 100%);
+  z-index: 100;
 }
 
 .logo {
@@ -57,31 +58,35 @@ nav {
 }
 
 
-.slide_index{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+
+.slide_index {
+  /*max-width: 100%;
+  height: auto;
+  display: block;*/
   object-fit: cover;
+  height: fit-content;
+  width: fit-content;
   max-width: 100%;
-} 
-@media screen and (max-width: 600px){
-  .slide_index{
-    display: block;
-    max-width: 100%;
-    min-width: 100%;
-   
-    
-    
-    
-    
-    
-    
-
-    
-  } 
-
-} 
+  max-height: 100%;
   
+}
+
+
+
+/* For mobile devices, scale the image differently */
+/*
+@media (max-width: 1000px) {
+  .slide_index {
+      height: fit-content;
+      width: fit-content;
+      max-width: 100%;
+      max-height: 100%;
+      
+  }
+}
+
+*/
 
 
 .slide_projects {

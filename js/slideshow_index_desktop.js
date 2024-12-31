@@ -29,14 +29,15 @@ var portrait_images = [
 var time = 3000;
 const slide=document.getElementById("slide")
 
+var img = desktop_images
 
 
 
 function changeImg(){
 
-    
-    if(screenWidth > 600){var img = desktop_images}
-    else{var img = portrait_images}
+    //
+    //if(screenWidth > 600){var img = desktop_images}
+    //else{var img = portrait_images}
     
 
     
