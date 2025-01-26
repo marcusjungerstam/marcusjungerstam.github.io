@@ -332,8 +332,14 @@ a:active {
 .item3 {
   grid-column: 1/span 6;
   padding: 2px;
+  font-size: max(16px, 1vw);
 }
 
+@media screen and (max-width: 600px) {
+  .item3 {
+    font-size: max(13px, 1vw);
+  }
+}
 .item3_end {
   margin-bottom: 10vh;
 }
