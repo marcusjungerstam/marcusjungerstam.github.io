@@ -36,6 +36,11 @@ nav {
   z-index: 100;
 }
 
+main {
+  justify-content: center;
+  max-width: 100%;
+}
+
 .logo {
   margin-left: 5%;
   z-index: 0;

@@ -1,16 +1,17 @@
 var i = 0;
 var screenWidth = window.innerWidth;
 var desktop_images = [
-    'img/index/landscape/img_6.png',
-    'img/index/landscape/img_7.png',
-    'img/index/landscape/img_2.png',
     'img/index/landscape/img_1.png',
     'img/index/landscape/img_2.png',
     'img/index/landscape/img_3.png',
     'img/index/landscape/img_4.png',
-    'img/index/landscape/img_2.png',
+    'img/index/landscape/img_5.png',
+    'img/index/landscape/img_6.png',
+    'img/index/landscape/img_7.png',
     'img/index/landscape/img_8.png',
     'img/index/landscape/img_9.png',
+    'img/index/landscape/img_10.png',
+    'img/index/landscape/img_11.png',
 ];
 
 var portrait_images = [
@@ -26,7 +27,7 @@ var portrait_images = [
 
 
 
-var time = 3000;
+var time = 4000;
 const slide=document.getElementById("slide")
 
 var img = desktop_images
