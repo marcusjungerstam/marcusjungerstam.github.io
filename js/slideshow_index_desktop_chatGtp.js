@@ -1,56 +1,39 @@
-var i = 0;
-var screenWidth = window.innerWidth;
-var desktop_images = [
-    'img/index/landscape/img_6.png',
-    'img/index/landscape/img_7.png',
-    'img/index/landscape/img_2.png',
-    'img/index/landscape/img_1.png',
-    'img/index/landscape/img_2.png',
-    'img/index/landscape/img_3.png',
-    'img/index/landscape/img_4.png',
-    'img/index/landscape/img_2.png',
-    'img/index/landscape/img_8.png',
-    'img/index/landscape/img_9.png',
-];
+const slides = document.querySelectorAll(".slide");
+let current = 0;
 
-var portrait_images = [
-    'img/index/portrait/img_1.png',
-    'img/index/portrait/img_2.png',
-    'img/index/portrait/img_3.png',
-    'img/index/portrait/img_4.png',
-    'img/index/portrait/img_5.png',
-    'img/index/portrait/img_6.png',
-    'img/index/portrait/img_7.png',
-];
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
 
-var time = 3000;
-const slide = document.getElementById("slide");
+    if (slide.tagName === "VIDEO") {
+      slide.pause();
+      slide.currentTime = 0;
+      slide.loop = false;
 
-// Set the image array based on the screen size
-var img = desktop_images;
+      if (i === index) {
+        slide.play();
 
-function changeImg() {
-    // Add zoom-in class to the image for animation
-    slide.classList.add('zoom-in');
-    
-    // Change the image source
-    slide.src = img[i];
-
-    // Reset the zoom effect after a short delay (to allow the zoom to complete)
-    setTimeout(() => {
-        slide.classList.remove('zoom-in');
-    }, 1000);  // Match this delay with the transition time (1 second)
-
-    // Move to the next image
-    if (i < img.length - 1) {
-        i++;
-    } else {
-        i = 0;
+        slide.onended = () => {
+          current = (current + 1) % slides.length;
+          showSlide(current);
+        };
+      } else {
+        slide.onended = null;
+      }
     }
-
-    // Call the changeImg function again after the specified time
-    setTimeout(changeImg, time);
+  });
 }
 
-// Initialize image change on page load
-window.onload = changeImg;
+// Click anywhere to go to next slide
+document.querySelector(".click-catcher").addEventListener("click", () => {
+  const active = slides[current];
+
+  // Only allow manual skip if current is NOT an actively playing video
+  //if (active.tagName === "VIDEO" && !active.ended) return;
+
+  current = (current + 1) % slides.length;
+  showSlide(current);
+});
+
+// Initialize
+showSlide(current);
